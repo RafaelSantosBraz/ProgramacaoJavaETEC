@@ -1,0 +1,13 @@
+ public static Connection getConexao() throws SQLException, ClassNotFoundException {
+
+         System.out.println("Conectado ao banco");
+        return DriverManager.getConnection("jdbc:mysql://127.0.0.1/bdmodelo", "root", "");
+
+    }
+
+
+teste
+
+Connection com = ClassConexao.getConexao();            
+	com.close();
+            System.out.println("Desconectado do banco ");

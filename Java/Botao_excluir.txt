@@ -1,0 +1,5 @@
+       
+        ClientePessoaFisica cliente = new ClientePessoaFisica();
+        cliente.setCodigo (Integer.parseInt(jTextField1.getText()));
+        ClientePessoaFisicaDAO dao = new ClientePessoaFisicaDAO();
+        dao.excluir(cliente);

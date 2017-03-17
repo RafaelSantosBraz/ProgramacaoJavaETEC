@@ -1,0 +1,12 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.eclipse.jdt.ui,3.4.0.v20080603-2000,org.eclipse.jdt.ui.CompilationUnitEditor,1425246752891
+deactivated,workbench,org.eclipse.ui.workbench,3.4.0.I20080606-1300,,1425246754390
+activated,workbench,org.eclipse.ui.workbench,3.4.0.I20080606-1300,,1425246755563
+activated,view,org.eclipse.jdt.ui,3.4.0.v20080603-2000,org.eclipse.jdt.ui.PackageExplorer,1425246755576
+started,bundle,org.eclipse.mylyn.ide.ant,3.0.0.v20080619-1900,org.eclipse.mylyn.ide.ant,1425246755628
+started,bundle,org.eclipse.mylyn.java.ui,3.0.0.v20080619-1900,org.eclipse.mylyn.java.ui,1425246755641
+started,bundle,org.eclipse.mylyn.pde.ui,3.0.0.v20080619-1900,org.eclipse.mylyn.pde.ui,1425246755663
+started,bundle,org.eclipse.mylyn.resources.ui,3.0.0.v20080619-1900,org.eclipse.mylyn.resources.ui,1425246755694
+closed,workbench,org.eclipse.ui.workbench,3.4.0.I20080606-1300,,1425246755829
+stopped,bundle,org.eclipse.jst.j2ee.xdoclet.runtime,1.1.102.v200805140135,org.eclipse.jst.j2ee.xdoclet.runtime,1425246756327
+stopped,bundle,org.eclipse.jst.j2ee.ejb.annotations.xdoclet,1.2.0.v200805140020,org.eclipse.jst.j2ee.ejb.annotations.xdoclet,1425246756599

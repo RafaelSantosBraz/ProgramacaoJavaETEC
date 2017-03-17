@@ -1,0 +1,25 @@
+metodo limpar
+public void limpar (){
+        jTextField1.setText(null);
+        jTextField2.setText(null);
+        jTextField3.setText(null);
+        jTextField4.setText(null);
+        jTextField5.setText(null);
+        jTextField6.setText(null);
+        jTextField7.setText(null);
+        jTextField8.setText(null);
+        jTfone.setText(null);
+        jTfonecel.setText(null);
+        jTextField9.setText(null);
+        jTcpf.setText(null);
+        jTrg.setText(null);
+        jTextField10.setText(null);
+        jTextField11.setText(null);
+        jTextField12.setText(null);
+        jTextField13.setText(null);
+        jFormattedTextField1.setText(null);
+        jTextField14.setText(null);
+        jComboBox2.setSelectedIndex(-1);
+        jTextField15.setText(null);
+        jTextField2.requestFocus();
+    }

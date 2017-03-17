@@ -1,0 +1,11 @@
+INDEX VERSION 1.125+C:\Users\User\Desktop\RAFAELPEN\1º e 2º Ano (o que sobrou)\Java\Workspace Trabalho Java\.metadata\.plugins\org.eclipse.jdt.core
+1796884264.index
+3363946422.index
+831420059.index
+2135303338.index
+3469127304.index
+3833776325.index
+1423521505.index
+837780899.index
+172995694.index
+3383348850.index

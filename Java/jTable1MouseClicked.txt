@@ -1,0 +1,73 @@
+private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {                                     
+// TODO add your handling code here:
+    
+     if (evt.getClickCount() == 1) {
+            for (int i = 0; i <= jTable1.getColumnCount() - 1; i++) {
+                if (i == 0) {
+                    GrafClienteFisica.jTextField1.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                if (i == 1) {
+                    GrafClienteFisica.jTextField2.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                if (i == 2) {
+                    GrafClienteFisica.jTcpf.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                if (i == 3) {
+                    GrafClienteFisica.jTrg.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                } 
+                if (i == 4) {
+                    GrafClienteFisica.jTextField3.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                if (i == 5) {
+                    GrafClienteFisica.jTextField5.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                 if (i == 6) {
+                    GrafClienteFisica.jTextField7.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                if (i == 7) {
+                    GrafClienteFisica.jTextField4.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                 if (i == 8) {
+                    GrafClienteFisica.jTextField6.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                if (i == 9) {
+                    GrafClienteFisica.jComboBox1.setSelectedItem(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                 if (i == 10) {
+                    GrafClienteFisica.jTextField8.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                  if (i == 11) {
+                    GrafClienteFisica.jTfone.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                   if (i == 12) {
+                    GrafClienteFisica.jTfonecel.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                    if (i == 13) {
+                    GrafClienteFisica.jTextField9.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                     if (i == 14) {
+                    GrafClienteFisica.jTextField10.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                      if (i == 15) {
+                    GrafClienteFisica.jTextField11.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                       if (i == 16) {
+                    GrafClienteFisica.jTextField13.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                        if (i == 17) {
+                    GrafClienteFisica.jFormattedTextField1.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                         if (i == 18) {
+                    GrafClienteFisica.jTextField14.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                          if (i == 19) {
+                    GrafClienteFisica.jComboBox2.setSelectedItem(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                           if (i == 20) {
+                    GrafClienteFisica.jTextField15.setText(jTable1.getValueAt(jTable1.getSelectedRow(), i).toString());
+                }
+                       
+            }
+        }
+     this.dispose();
+}

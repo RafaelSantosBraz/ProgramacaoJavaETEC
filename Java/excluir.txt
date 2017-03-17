@@ -1,0 +1,15 @@
+ public void excluir (ClassCliente cliente) throws SQLException{
+
+         String sqlexcluir = "Delete from cliente where codcli = ?";
+         PreparedStatement stm = this.conexao.prepareStatement(sqlexcluir);
+         stm.setInt(1,cliente.getCodigo());
+         stm.execute();
+         stm.close();
+     }
+
+teste main
+
+ClassCliente cliente = new ClassCliente();
+        cliente.setCodigo(6);
+        ClassclientesDAO dao = new ClassclientesDAO();
+        dao.excluir(cliente);

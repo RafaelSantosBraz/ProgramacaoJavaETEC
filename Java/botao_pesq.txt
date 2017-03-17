@@ -1,0 +1,5 @@
+ ClientePessoaFisicaDAO dao = new ClientePessoaFisicaDAO();
+        String nome = (jTextField12.getText());
+        GrafpesqClienteFisica grp = new GrafpesqClienteFisica();
+        grp.setVisible(true);
+        dao.getList(nome,GrafpesqClienteFisica.jTable1);

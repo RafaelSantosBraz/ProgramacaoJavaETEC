@@ -1,0 +1,29 @@
+ public void getList(String nome,JTable jTable1) throws SQLException{
+        String sql = "SELECT * FROM clientepessoafisica WHERE nomecli like '%" +  nome + "%'";
+         
+         PreparedStatement ppt = conexao.prepareStatement(sql);
+       
+         ResultSet res = ppt.executeQuery();
+        
+           
+        DefaultTableModel model =(DefaultTableModel) jTable1.getModel();
+                 model.setNumRows(0);
+          
+                while (res.next()){
+                    model.addRow(new Object[]{res.getInt("codcli"),
+                    res.getString("nomecli"),res.getString("cpfcli"),res.getString("rgcli"),
+                    res.getString("endcli"),res.getString("complcli"),res.getString("numerocli"),
+                    res.getString("bairrocli"),res.getString("cidadecli"),res.getString("ufcli"),
+                    res.getString("cepcli"),res.getString("fonecli"),res.getString("fonecelcli"),
+                    res.getString("emailcli"),res.getString("emptrabalhocli"),res.getString("funccli"),
+                    res.getString("fonecomercialcli"),res.getString("datadmincli"),res.getDouble("salariocli"),
+                    res.getString("situacaocli"),res.getString("absdasituacao")});
+                  
+                  }
+               
+                 ppt.close();
+                 res.close();
+                conexao.close();
+              System.out.println("Desconectado do banco");
+           
+     }

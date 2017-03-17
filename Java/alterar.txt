@@ -1,0 +1,42 @@
+public void alterar(ClassCliente cliente) throws SQLException{
+ 
+String sqlalt = "update cliente set nomecli=?,endcli=?,bairrocli=?,complementocli=?,cidadecli=?," +
+                 "ufcli=?,fonecli=?,fonecelcli=?,email=?,cpfcli=?,rgcli=? where codcli=?";
+         PreparedStatement smt = this.conexao.prepareStatement(sqlalt);
+          smt.setString(1,cliente.getNome());
+          smt.setString(2,cliente.getEndereco());
+          smt.setString(3,cliente.getBairro());
+          smt.setString(4,cliente.getComplemento());
+          smt.setString(5,cliente.getCidade());
+          smt.setString(6,cliente.getUf());
+          smt.setString(7,cliente.getFone());
+          smt.setString(8,cliente.getFonecel());
+          smt.setString(9,cliente.getEmail());
+          smt.setString(10,cliente.getCpf());
+          smt.setString(11,cliente.getRg());
+          smt.setInt(12,cliente.getCodigo());
+          smt.executeUpdate();
+          smt.close();
+          conexao.close();
+     }
+
+
+Na class main.java digitar o seguinte código:
+
+ClassCliente cliente = new ClassCliente();
+        cliente.setCodigo(8);
+        cliente.setNome("prof Guido junior");
+        cliente.setEndereco("Rua seis");
+        cliente.setBairro("centro");
+        cliente.setComplemento("fundos");
+        cliente.setCidade("Cabralia Paulista");
+        cliente.setUf("SP");
+        cliente.setFone("2222-2222");
+        cliente.setFonecel("1111-1111");
+        cliente.setEmail("guido_branco@yahoo.com.br");
+        cliente.setCpf("222-222-222-22");
+        cliente.setRg("11.111.111-1");
+        ClassclientesDAO dao = new ClassclientesDAO();
+        dao.alterar(cliente);
+        System.out.println("dados alterados no banco");
+
